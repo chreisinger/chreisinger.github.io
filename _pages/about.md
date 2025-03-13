@@ -7,6 +7,22 @@ redirect_from:
   - /about.html
 ---
 
+<style>
+.mybutton {
+    background-color: #363636;
+    border: none;
+    color: white;
+    padding: 6px 15px;
+    text-align: center;
+    text-decoration: none !important;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 1px;
+    cursor: pointer;
+    border-radius: 25px
+}
+</style>
+
 Currently, I am a PhD student at the [Institute of Visual Computing (former ICG)](https://www.tugraz.at/institute/icg/home) at [Graz University of Technology](https://www.tugraz.at/) under the supervision of [Prof. Horst Bischof](https://scholar.google.at/citations?user=_pq05Q4AAAAJ).
 
 My research interests focus on LiDAR-based 3D object detection, unsupervised domain adaptation (UDA) and multimodal large language models (MLLMs) for autonomous driving.  
@@ -16,6 +32,47 @@ Previously, I received my Master's degree in Information and Computer Engineerin
 
 Research
 ------
+<table border="0" style="border-collapse: collapse; border: none;">
+  {% for post in site.publications reversed %}
+  <tr>
+    <td style="border: none; vertical-align: top;">
+      <p>
+      <img src="{{post.img}}" style="width: 300px;">
+      </p>
+    </td>
+    <td style="border: none; vertical-align: top;">
+      <p>
+        <strong style='color: #BF4C26; font-size: 12pt;'>{{post.title}}<br></strong>
+        {{post.authors | replace: "Christian Fruhwirth-Reisinger", "<strong>Christian Fruhwirth-Reisinger</strong>" }}<br>
+        In Proc. of the <i>{{post.venue}}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}<br>
+        <a href="{{post.paperlink}}" class="mybutton">
+        <span class="icon">
+          <i class="fa fa-file-pdf withpuburl"></i>
+        </span>
+        <span> Paper </span>
+        </a>
+        {% if post.code %}
+          <a href="{{post.code}}" class="mybutton">
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+          <span> Code </span>
+          </a>
+        {% endif %}
+        <!-- <hr> -->
+      </p>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+<!-- <table border="0" style="border-collapse: collapse; border: none;">
+  {% for post in site.publications reversed %}
+  <tr>
+    <td style="border: none;">{{post.title}}</td>
+  </tr>
+  {% endfor %}
+</table> -->
+
 
 
 Academic Service
@@ -24,7 +81,7 @@ Conference Reviewer:
 - CVPR: 2024, 2025 
 - ICCV: 2025
 - WACV: 2023, 2025
-<br>
+
 Journal Reviewer:
 - Pattern Recognition: 2021
 - TPAMI: 2022

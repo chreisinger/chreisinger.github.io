@@ -16,6 +16,8 @@ bibtex: '@inproceedings{reisinger2021fast3d,</br>
     &nbsp; &nbsp; &nbsp; year = {2021}
     </br>}'
 authors: 'Christian Fruhwirth-Reisinger, Michael Opitz, Horst Possegger, Horst Bischof'
+img: /images/fast3d.png
+paperlink: 'https://arxiv.org/pdf/2110.09355'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+In the field of autonomous driving, self-training is widely applied to mitigate distribution shifts in LiDAR-based 3D object detectors. This eliminates the need for expensive, high-quality labels whenever the environment changes (e.g., geographic location, sensor setup, weather condition). State-of-the-art self-training approaches, however, mostly ignore the temporal nature of autonomous driving data. To address this issue, we propose a flow-aware self-training method that enables unsupervised domain adaptation for 3D object detectors on continuous LiDAR point clouds. In order to get reliable pseudo-labels, we leverage scene flow to propagate detections through time. In particular, we introduce a flow-based multi-target tracker, that exploits flow consistency to filter and refine resulting tracks. The emerged precise pseudo-labels then serve as a basis for model re-training. Starting with a pre-trained KITTI model, we conduct experiments on the challenging Waymo Open Dataset to demonstrate the effectiveness of our approach. Without any prior target domain knowledge, our results show a significant improvement over the state-of-the-art.
