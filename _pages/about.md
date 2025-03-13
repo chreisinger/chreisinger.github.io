@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Currently, I am a PhD student at the [Institute of Visual Computing](https://www.tugraz.at/institute/icg/home) at [Graz University of Technology](https://www.tugraz.at/) under the supervision of [Prof. Horst Bischof](https://scholar.google.at/citations?user=_pq05Q4AAAAJ).
+Currently, I am a PhD student at the [Institute of Visual Computing (former ICG)](https://www.tugraz.at/institute/icg/home) at [Graz University of Technology](https://www.tugraz.at/) under the supervision of [Prof. Horst Bischof](https://scholar.google.at/citations?user=_pq05Q4AAAAJ).
 
 My research interests focus on LiDAR-based 3D object detection, unsupervised domain adaptation (UDA) and multimodal large language models (MLLMs) for autonomous driving.  
 
@@ -16,7 +16,7 @@ Previously, I received my Master's degree in Information and Computer Engineerin
 
 Research
 ------
-TBD
+
 
 Academic Service
 ------
