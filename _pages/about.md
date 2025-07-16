@@ -63,7 +63,7 @@ Previously, I received my Master's degree in Information and Computer Engineerin
         {% if post.dataset %}
           <a href="{{post.dataset}}" class="mybutton">
           <span class="icon">
-            <i class="fab fa-database"></i>
+            <i class="fas fa-database"></i>
           </span>
           <span> Dataset </span>
           </a>
@@ -89,7 +89,6 @@ Previously, I received my Master's degree in Information and Computer Engineerin
 Conference Reviewer:
 
 - CVPR: 2024, 2025
-- ICCV: 2025
 - WACV: 2023, 2025
 
 Journal Reviewer:
