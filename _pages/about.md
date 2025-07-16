@@ -43,7 +43,7 @@ Previously, I received my Master's degree in Information and Computer Engineerin
       <p>
         <strong style='color: #BF4C26; font-size: 12pt;'>{{post.title}}<br></strong>
         {{post.authors | replace: "Christian Fruhwirth-Reisinger", "<strong>Christian Fruhwirth-Reisinger</strong>" }}<br>
-        In Proc. of the <i>{{post.venue}}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}. 
+        {% if post.preprint %}{% else %}In Proc. of the {% endif %}<i>{{post.venue}}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}. 
         {% if post.oral %}<strong style='color: red;'>Oral presentation</strong>{% endif %}{% if post.award %},{% endif %}
         {% if post.award %}<strong style='color: red;'>{{post.award}}</strong>{% endif %}<br>
         <a href="{{post.paperlink}}" class="mybutton">
