@@ -19,7 +19,6 @@ authors: 'Christian Fruhwirth-Reisinger, Dušan Malić, Wei Lin, David Schinagl,
 code: 'https://github.com/LRP-IVC/STSBench'
 dataset: 'https://huggingface.co/datasets/ivc-lrp/STSBench'
 paperlink: 'https://arxiv.org/pdf/2506.06218'
-preprint: True
 img: /images/stsbench.png
 
 ---
